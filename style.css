@@ -1,0 +1,96 @@
+/* Base style */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    transition: background-image 0.5s ease-in-out, background-color 0.5s;
+  }
+  
+  /* Light Theme */
+  body.light {
+    background-color: #f0f0f0;
+    color: #222;
+  }
+  
+  /* Dark Theme */
+  body.dark {
+    background-color: #1e1e2f;
+    color: #fff;
+  }
+  
+  /* Input field */
+  #city-input {
+    padding: 12px;
+    width: 80%;
+    max-width: 300px;
+    border: none;
+    border-radius: 8px;
+    margin: 10px 0;
+    font-size: 16px;
+  }
+  
+  body.dark #city-input {
+    background-color: rgba(255, 255, 255, 0.1);
+    color: white;
+  }
+  body.light #city-input {
+    background-color: rgba(0, 0, 0, 0.1);
+    color: black;
+  }
+  
+  #city-input::placeholder {
+    color: #888;
+  }
+  
+  /* Button */
+  #city-input-btn, #theme-toggle {
+    padding: 10px 20px;
+    background-color: #4e8cff;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    margin: 8px;
+  }
+  
+  #city-input-btn:hover, #theme-toggle:hover {
+    background-color: #2e6dfb;
+  }
+  
+  /* Weather info */
+  #weather-info {
+    display: none;
+    margin-top: 20px;
+  }
+  
+  #weather-icon {
+    width: 100px;
+    margin: 10px 0;
+  }
+  
+  #temperature {
+    font-size: 36px;
+    font-weight: bold;
+  }
+  
+  #description {
+    font-size: 18px;
+    text-transform: capitalize;
+    opacity: 0.9;
+  }
+  
+  #wind-speed, #date {
+    font-size: 14px;
+    opacity: 0.7;
+  }
+  
